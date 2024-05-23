@@ -38,7 +38,7 @@ const InputError = require('../exceptions/InputError');
                 status: 'fail',
                 message: response.message
             })
-            newResponse.code(413)
+            newResponse.code(response.output.statusCode)
             return newResponse;
         }
  
